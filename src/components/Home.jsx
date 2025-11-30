@@ -15,6 +15,9 @@ const Home = () => {
         Stage3
       </div>
       <div>
+        Search
+      </div>
+      <div>
         Profile
       </div>
     </div>
