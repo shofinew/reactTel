@@ -4,11 +4,11 @@ import Topbar from "./components/Topbar"
 
 function App() {
   return (
-    <>
-      <Home />
-      Hello React
+    <div className="m-2 ">
       <Topbar />
-    </>
+      <Home />
+      
+    </div>
   )
 }
 
