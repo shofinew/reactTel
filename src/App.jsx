@@ -1,13 +1,26 @@
-import Home from "./components/Home"
+import { useState } from "react"
+import Placement from "./components/Placement"
+import Product from "./components/Product"
 import Topbar from "./components/Topbar"
 
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+    // setCart(newCart => [...newCart, product]);
+  }
+ 
   return (
-    <div className="m-2 ">
+    <div>
       <Topbar />
-      <Home />
+    <div>
       
+      <Product addToCart={addToCart}></Product>
+      <Placement cart={cart}></Placement>
+      
+    </div>
     </div>
   )
 }
